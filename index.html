@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>車書類ナビ</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f4f6f9;
+      color:#333;
+    }
+
+    header{
+      background:#0d6efd;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      margin:0;
+      font-size:40px;
+    }
+
+    header p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
+    main{
+      max-width:1000px;
+      margin:auto;
+      padding:30px;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      text-decoration:none;
+      color:#333;
+      box-shadow:0 5px 15px rgba(0,0,0,.1);
+      transition:.2s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    footer{
+      margin-top:50px;
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚗 車書類ナビ</h1>
+  <p>必要書類をすぐに検索できる無料サイト</p>
+</header>
+
+<main>
+
+<h2>手続きを選んでください</h2>
+
+<div class="grid">
+
+<a class="card" href="#">
+<h3>名義変更</h3>
+<p>必要書類を見る</p>
+</a>
+
+<a class="card" href="#">
+<h3>住所変更</h3>
+<p>必要書類を見る</p>
+</a>
+
+<a class="card" href="#">
+<h3>廃車</h3>
+<p>必要書類を見る</p>
+</a>
+
+<a class="card" href="#">
+<h3>車庫証明</h3>
+<p>必要書類を見る</p>
+</a>
+
+<a class="card" href="#">
+<h3>減車登録</h3>
+<p>必要書類を見る</p>
+</a>
+
+<a class="card" href="#">
+<h3>ナンバー変更</h3>
+<p>必要書類を見る</p>
+</a>
+
+</div>
+
+</main>
+
+<footer>
+© 2026 車書類ナビ
+</footer>
+
+</body>
+</html>
