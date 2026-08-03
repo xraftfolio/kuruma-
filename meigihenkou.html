@@ -3,424 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>車の名義変更に必要な書類｜車書類ナビ</title>
-
-  <meta
-    name="description"
-    content="普通車・軽自動車の名義変更に必要な書類や手続き場所を、分かりやすく案内します。"
-  >
-
+  <meta name="description" content="普通車・軽自動車の名義変更に必要な書類、場所、費用の案内">
+  <title>名義変更｜車書類ナビ</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "Hiragino Kaku Gothic ProN",
-        "Yu Gothic",
-        Meiryo,
-        sans-serif;
-      background: #f4f7fb;
-      color: #263238;
-      line-height: 1.8;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0868c9, #0d8be6);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 34px;
-    }
-
-    header p {
-      margin: 10px 0 0;
-      font-size: 16px;
-    }
-
-    .breadcrumb {
-      max-width: 900px;
-      margin: 18px auto 0;
-      padding: 0 18px;
-      font-size: 14px;
-      color: #59666f;
-    }
-
-    .breadcrumb a {
-      color: #0868c9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 20px auto 50px;
-      padding: 0 18px;
-    }
-
-    .notice {
-      background: #fff8dc;
-      border-left: 5px solid #f2b705;
-      border-radius: 8px;
-      padding: 16px 18px;
-      margin-bottom: 22px;
-    }
-
-    .section {
-      background: white;
-      border-radius: 14px;
-      padding: 25px;
-      margin-bottom: 22px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #0868c9;
-      border-bottom: 2px solid #e4edf7;
-      padding-bottom: 10px;
-      font-size: 24px;
-    }
-
-    h3 {
-      margin-top: 25px;
-      color: #1c4f7c;
-    }
-
-    .type-buttons {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .type-button {
-      border: 2px solid #0868c9;
-      background: white;
-      color: #0868c9;
-      border-radius: 10px;
-      padding: 13px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .type-button:hover {
-      background: #eaf4ff;
-    }
-
-    .type-button.active {
-      background: #0868c9;
-      color: white;
-    }
-
-    .vehicle-content {
-      display: none;
-    }
-
-    .vehicle-content.active {
-      display: block;
-    }
-
-    .check-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .check-list li {
-      position: relative;
-      padding: 12px 12px 12px 42px;
-      margin-bottom: 9px;
-      background: #f6f9fc;
-      border-radius: 9px;
-    }
-
-    .check-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 15px;
-      top: 11px;
-      color: #0a9b55;
-      font-weight: bold;
-      font-size: 19px;
-    }
-
-    .small {
-      color: #59666f;
-      font-size: 14px;
-    }
-
-    .steps {
-      padding-left: 25px;
-    }
-
-    .steps li {
-      margin-bottom: 12px;
-      padding-left: 5px;
-    }
-
-    .official-link {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0868c9;
-      font-weight: bold;
-    }
-
-    .back-button {
-      display: block;
-      width: fit-content;
-      margin: 30px auto 0;
-      padding: 13px 24px;
-      border-radius: 10px;
-      background: #0868c9;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .back-button:hover {
-      background: #0758a9;
-    }
-
-    footer {
-      background: #1d2730;
-      color: white;
-      text-align: center;
-      padding: 24px 15px;
-    }
-
-    footer p {
-      margin: 4px;
-    }
-
-    footer .small {
-      color: #d7e0e7;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 35px 15px;
-      }
-
-      header h1 {
-        font-size: 27px;
-      }
-
-      .section {
-        padding: 20px 17px;
-      }
-
-      .type-buttons {
-        grid-template-columns: 1fr;
-      }
-
-      h2 {
-        font-size: 21px;
-      }
-    }
+    :root{--navy:#12345b;--blue:#1677c8;--pale:#eef7ff;--text:#243447;--muted:#60758a;--line:#dbe7f1;--white:#fff;--green:#147a62;--shadow:0 8px 25px rgba(24,65,105,.09)}
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Yu Gothic",sans-serif;color:var(--text);background:#f7fafc;line-height:1.75}.wrap{width:min(920px,calc(100% - 32px));margin:auto}a{color:var(--blue)}
+    header{background:#fff;border-bottom:1px solid var(--line)}.head{min-height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;color:var(--navy);text-decoration:none}.back{text-decoration:none;font-size:.9rem;font-weight:700}
+    .title-area{padding:46px 0 34px;background:linear-gradient(135deg,#eaf5ff,#f8fcff)}.crumb{font-size:.82rem;color:var(--muted);margin:0 0 8px}.title-area h1{margin:0 0 8px;color:var(--navy);font-size:clamp(2rem,5vw,3rem)}.title-area p{margin:0;color:var(--muted)}
+    main{padding:36px 0 70px}.switch-label{font-weight:700;margin:0 0 10px}.switch{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:30px;padding:6px;background:#e9f0f6;border-radius:14px}.switch button{border:0;border-radius:10px;padding:14px;background:transparent;color:#52687c;font:inherit;font-weight:800;cursor:pointer}.switch button.active{background:#fff;color:var(--blue);box-shadow:0 3px 12px rgba(20,60,100,.12)}
+    .panel{display:none}.panel.active{display:block}.intro{background:#eaf8f4;border:1px solid #c4e8dd;border-radius:14px;padding:16px 20px;margin-bottom:20px;color:#285f51}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}.box.full{grid-column:1/-1}.box h2{font-size:1.18rem;color:var(--navy);margin:0 0 12px}.box ul{margin:0;padding-left:1.25rem}.box li+li{margin-top:7px}.sub{display:block;color:var(--muted);font-size:.84rem}.price{font-size:1.45rem;font-weight:800;color:var(--green);margin:0}.small{font-size:.86rem;color:var(--muted);margin:7px 0 0}.warning{margin-top:20px;padding:20px;border-radius:15px;background:#fff7df;border:1px solid #f0d993}.warning h2{font-size:1.05rem;color:#705400;margin:0 0 8px}.warning ul{margin:0;padding-left:1.2rem}.home-link{display:inline-block;margin-top:30px;padding:12px 20px;border-radius:10px;background:var(--navy);color:#fff;text-decoration:none;font-weight:700}
+    footer{text-align:center;padding:28px 16px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);background:#fff}
+    @media(max-width:680px){.grid{grid-template-columns:1fr}.box.full{grid-column:auto}.title-area{padding-top:35px}.back{font-size:.82rem}}
   </style>
 </head>
-
 <body>
-
-  <header>
-    <h1>🚗 車の名義変更</h1>
-    <p>普通車・軽自動車の必要書類と手続き方法</p>
-  </header>
-
-  <div class="breadcrumb">
-    <a href="index.html">トップページ</a>
-    ＞ 名義変更
-  </div>
-
-  <main>
-
-    <div class="notice">
-      <strong>注意：</strong>
-      必要書類は、所有者と使用者が異なる場合、住所・氏名が変わっている場合、
-      ローン会社などが所有者の場合によって異なります。
-      手続き前に、管轄窓口の公式案内も確認してください。
-    </div>
-
-    <section class="section">
-      <h2>車の種類を選んでください</h2>
-
-      <div class="type-buttons">
-        <button
-          class="type-button active"
-          id="normal-button"
-          type="button"
-          onclick="showVehicle('normal')"
-        >
-          普通車
-        </button>
-
-        <button
-          class="type-button"
-          id="kei-button"
-          type="button"
-          onclick="showVehicle('kei')"
-        >
-          軽自動車
-        </button>
+  <header><div class="wrap head"><a class="logo" href="index.html">🚗 車書類ナビ</a><a class="back" href="index.html">← トップへ戻る</a></div></header>
+  <section class="title-area"><div class="wrap"><p class="crumb">トップ ＞ 名義変更</p><h1>名義変更</h1><p>車の種類を選ぶと、必要なものを確認できます。</p></div></section>
+  <main><div class="wrap">
+    <p class="switch-label">車の種類を選択</p>
+    <div class="switch" role="tablist" aria-label="車種の切り替え"><button id="normal-tab" class="active" type="button" role="tab" aria-selected="true" aria-controls="normal">普通車</button><button id="kei-tab" type="button" role="tab" aria-selected="false" aria-controls="kei">軽自動車</button></div>
+    <section id="normal" class="panel active" role="tabpanel" aria-labelledby="normal-tab">
+      <div class="intro">普通車の名義変更（移転登録）は、原則として新しい所有者の住所を管轄する運輸支局で行います。</div>
+      <div class="grid">
+        <article class="box full"><h2>📄 主な必要書類</h2><ul><li>自動車検査証（車検証）</li><li>譲渡証明書 <span class="sub">旧所有者の実印を押印</span></li><li>旧所有者の印鑑証明書 <span class="sub">一般に発行後3か月以内</span></li><li>新所有者の印鑑証明書 <span class="sub">一般に発行後3か月以内</span></li><li>新所有者の実印</li><li>委任状 <span class="sub">本人以外が申請する場合</span></li><li>車庫証明書 <span class="sub">適用地域では、一般に発行後おおむね1か月以内</span></li><li>申請書・手数料納付書</li></ul></article>
+        <article class="box"><h2>📍 手続き場所</h2><p>新しい所有者の住所を管轄する<strong>運輸支局・自動車検査登録事務所</strong></p><p class="small">管轄が変わる場合は、車の持ち込みとナンバープレート交換が必要になることがあります。</p></article>
+        <article class="box"><h2>💴 費用の目安</h2><p class="price">約500円〜</p><p class="small">登録手数料のほか、ナンバー変更・車庫証明・税申告などに別途費用がかかる場合があります。</p></article>
       </div>
-
-      <div id="normal" class="vehicle-content active">
-        <h3>普通車の主な必要書類</h3>
-
-        <ul class="check-list">
-          <li>自動車検査証（車検証）</li>
-          <li>移転登録申請書</li>
-          <li>手数料納付書</li>
-          <li>旧所有者の譲渡証明書</li>
-          <li>旧所有者の印鑑証明書</li>
-          <li>新所有者の印鑑証明書</li>
-          <li>代理人が申請する場合の委任状</li>
-          <li>必要な場合は自動車保管場所証明書（車庫証明）</li>
-          <li>管轄が変わる場合はナンバープレートと車両</li>
-        </ul>
-
-        <p class="small">
-          印鑑証明書などには有効期間があります。
-          車検証の住所や氏名が現在と異なる場合は、
-          変更のつながりを確認できる書類が追加で必要になることがあります。
-        </p>
-
-        <h3>手続き場所</h3>
-
-        <p>
-          新しい使用者の住所を管轄する運輸支局、
-          または自動車検査登録事務所
-        </p>
-
-        <a
-          class="official-link"
-          href="https://www.jidoushatouroku-portal.mlit.go.jp/jidousha/kensatoroku/transfer/index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          国土交通省の公式案内を見る
-        </a>
+      <aside class="warning"><h2>⚠ 注意点</h2><ul><li>売買・贈与・相続など、変更理由により追加書類が必要です。</li><li>ローン会社などが所有者の場合は、先に所有権解除の確認が必要です。</li><li>自動車税（環境性能割）がかかる場合があります。</li></ul></aside>
+    </section>
+    <section id="kei" class="panel" role="tabpanel" aria-labelledby="kei-tab" hidden>
+      <div class="intro">軽自動車の名義変更（名義変更を伴う記入申請）は、新しい使用者の住所を管轄する軽自動車検査協会で行います。</div>
+      <div class="grid">
+        <article class="box full"><h2>📄 主な必要書類</h2><ul><li>自動車検査証（車検証）</li><li>新しい使用者の住所を証する書面 <span class="sub">住民票の写し・印鑑証明書など。一般に発行後3か月以内</span></li><li>申請依頼書 <span class="sub">代理人が手続きする場合</span></li><li>自動車検査証記入申請書</li><li>ナンバープレート <span class="sub">管轄が変わる場合など</span></li><li>軽自動車税（種別割）申告書</li></ul></article>
+        <article class="box"><h2>📍 手続き場所</h2><p>新しい使用者の住所を管轄する<strong>軽自動車検査協会</strong></p><p class="small">ナンバーの管轄が変わる場合は、現在のナンバープレートも持参します。</p></article>
+        <article class="box"><h2>💴 費用の目安</h2><p class="price">申請手数料 0円</p><p class="small">ナンバープレート代、税申告、保管場所届出などに費用がかかる場合があります。</p></article>
       </div>
-
-      <div id="kei" class="vehicle-content">
-        <h3>軽自動車の主な必要書類</h3>
-
-        <ul class="check-list">
-          <li>自動車検査証（車検証）の原本</li>
-          <li>申請書（軽第1号様式）</li>
-          <li>新しい使用者の住所を証明する書類</li>
-          <li>代理人が手続きする場合の申請依頼書</li>
-          <li>管轄が変わる場合などはナンバープレート</li>
-          <li>希望番号を申し込んだ場合は希望番号予約済証</li>
-        </ul>
-
-        <p class="small">
-          車検証の所有者が販売店・ローン会社などの場合は、
-          所有者側の同意や手続きが必要になる場合があります。
-        </p>
-
-        <h3>手続き場所</h3>
-
-        <p>
-          新しい使用者の住所を管轄する
-          軽自動車検査協会の事務所・支所
-        </p>
-
-        <a
-          class="official-link"
-          href="https://www.keikenkyo.or.jp/procedures/change_name.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          軽自動車検査協会の公式案内を見る
-        </a>
-      </div>
+      <aside class="warning"><h2>⚠ 注意点</h2><ul><li>地域によっては、名義変更後に警察署へ保管場所の届出が必要です。</li><li>希望ナンバーを申し込む場合は事前予約と別途料金が必要です。</li><li>法人・相続などの場合は追加書類が必要になることがあります。</li></ul></aside>
     </section>
-
-    <section class="section">
-      <h2>手続きの基本的な流れ</h2>
-
-      <ol class="steps">
-        <li>普通車か軽自動車か確認する</li>
-        <li>車検証で現在の所有者と使用者を確認する</li>
-        <li>旧所有者と新所有者で必要書類を準備する</li>
-        <li>必要に応じて車庫証明を取得する</li>
-        <li>管轄する窓口で名義変更を申請する</li>
-        <li>ナンバーが変わる場合は新しいナンバーを受け取る</li>
-        <li>税金や自動車保険の名義も確認する</li>
-      </ol>
-    </section>
-
-    <section class="section">
-      <h2>追加書類が必要になりやすいケース</h2>
-
-      <ul>
-        <li>車検証の住所と現在の住所が違う</li>
-        <li>結婚などで氏名が変わっている</li>
-        <li>所有者と使用者が別の人になっている</li>
-        <li>ローン会社やリース会社が所有者になっている</li>
-        <li>相続によって名義を変更する</li>
-        <li>会社名義の車を変更する</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>このページについて</h2>
-
-      <p>
-        このページは、一般的な名義変更手続きの案内です。
-        車両や申請者の状況、地域によって必要書類が異なることがあります。
-        実際の申請前に、管轄する運輸支局または
-        軽自動車検査協会へ確認してください。
-      </p>
-    </section>
-
-    <a class="back-button" href="index.html">
-      トップページへ戻る
-    </a>
-
-  </main>
-
-  <footer>
-    <p>© 2026 車書類ナビ</p>
-    <p class="small">車の手続きを、分かりやすく。</p>
-  </footer>
-
+    <a class="home-link" href="index.html">← トップページへ戻る</a>
+  </div></main>
+  <footer>© 車書類ナビ ｜ 必ず管轄窓口の最新案内もご確認ください。</footer>
   <script>
-    function showVehicle(vehicleType) {
-      const normalContent = document.getElementById("normal");
-      const keiContent = document.getElementById("kei");
-      const normalButton = document.getElementById("normal-button");
-      const keiButton = document.getElementById("kei-button");
-
-      normalContent.classList.remove("active");
-      keiContent.classList.remove("active");
-      normalButton.classList.remove("active");
-      keiButton.classList.remove("active");
-
-      document.getElementById(vehicleType).classList.add("active");
-      document
-        .getElementById(vehicleType + "-button")
-        .classList.add("active");
-    }
+    const tabs=document.querySelectorAll('[role="tab"]');
+    tabs.forEach(tab=>tab.addEventListener('click',()=>{
+      tabs.forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false')});
+      document.querySelectorAll('.panel').forEach(p=>{p.classList.remove('active');p.hidden=true});
+      tab.classList.add('active');tab.setAttribute('aria-selected','true');
+      const panel=document.getElementById(tab.getAttribute('aria-controls'));panel.hidden=false;panel.classList.add('active');
+    }));
   </script>
-
 </body>
 </html>
